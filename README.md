@@ -94,7 +94,7 @@ dir=$(echo $dir | sed 's/ /\ /g')
 ex.
 wp-cli-for-git-bash.png
 
-#### Search `environment variable` in your computer ( make sure you choose to edit system variable not your account only ):
+#### Search `environment variable` in your computer ( make sure you choose to edit system variable not your account only ) :
 `Go to System’s Properties -> Advanced tab -> Environment Variables` ... 
 On System variables section locate Path variable, select and press edit.
 
@@ -114,15 +114,14 @@ cd C:/wamp64/www/vhosts
 ### 2 ways to download wordPress :
 
 #### First way :
-Make sure you are on git bash for windows users
+Make sure you are on git bash for windows users.
 
 ```
 curl -O https://wordpress.org/latest.tar.gz
 tar -xvzf latest.tar.gz
 ```
 
-Rename your extracted folder and `take note of its name` as this will be your url access to your local
-development website.
+Rename your extracted folder and `take note of its name` as this will be your url access to your local development website.
 
 ```
 mv wordpress/ ./thenetworkexam
@@ -151,7 +150,7 @@ wp core download
 ```
 
 ##### Create your database. Its up to you how you would do it either via browser phpmyadmin or via CLI.
-I will use the browser:
+###### I will use the browser :
 wampserver.png
 
 ##### Go to `Databases` tab then enter your desired database name on the provided input box.
@@ -166,21 +165,21 @@ wampserver-add-virtualhost-2.png
 
 Visit http://thenetwork.localdev to start installing wordpress.
 
-#### Troubleshooting:
+## Troubleshooting:
 If visiting the said url does not work.
 
-** Run notepad as administrator by right clicking the app and choosing run as administrator. **
+##### Run notepad as administrator by right clicking the app and choosing run as administrator. #####
 Locate windows hosts file on notepad by `ctrl + o`, and navigating to `C:\Windows\System32\drivers\etc` and displaying all files by clicking the dropdown below.
 
 ex.
 notepad-dropdown.png
 
-Open hosts file and change the ip.
+##### Open hosts file and change the ip. #####
 ```
 127.0.1.1 	thenetwork.localdev
 ```
 
-Restart your wampserver to take effect.
+##### Restart your wampserver to take effect. #####
 
 
 #### Install your wordpress via browser and follow instructions :
@@ -203,6 +202,3 @@ https://wensolutions.com/installing-wp-cli-in-windows/
 ## More Examples :
 https://deluxeblogtips.com/install-wp-cli-windows/
 https://maheshwaghmare.com/setup-wp-cli-wordpress-command-line-interface-on-windows-operating-system/
-
-
-
