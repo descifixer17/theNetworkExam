@@ -13,7 +13,7 @@ C:\wamp64\www\vhosts\ and yours will most like be in /www or /htdocs
 ```cd C:/wamp64/www/vhosts``` ( please mind the slashes if your having trouble with it )
 
 
-#### Install wp-cli:
+#### Install wp-cli :
 
 cd to where you want to install wp-cli
 mine is on `C:\phpTools` for global setup
@@ -24,17 +24,16 @@ ex. phpTools
 wp-cli-folder.png
 
 
-#### Download WP-CLI tool
+#### Download WP-CLI tool :
 
 At these point you should already be running your xampp or wamp or mamp already.
 ```
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 ```
-Confirm that it has been downloaded successfully
+Confirm that it has been downloaded successfully.
 ```
 php wp-cli.phar --info
 ```
-
 Make the file executable globally.
 
 ex.
@@ -49,16 +48,20 @@ sudo mv wp-cli.phar /usr/local/bin/wp
 ```
 
 #### Windows 10:
-##### You need to set wp-cli.phar to be an executable file in two files:
-###### Create a small batch file next to your *.phar to activate wp-cli in cmd:
+You need to set wp-cli.phar to be an executable file in two files.
+
+##### Create a small batch file next to your *.phar to activate wp-cli in cmd:
 `touch wp.bat` (take note of the name as this is the command you use in cmd)
 ex.
 wp-cli-for-cmd.png
 
 
 ##### Edit the file, add the following code, save and run the .bat file by double clicking:
-```@ECHO OFF
-php %~dp0wp-cli.phar %*```
+```
+@ECHO OFF
+php %~dp0wp-cli.phar %*
+```
+
 ex.
 edit-wp-cli-bat.png
 
