@@ -41,7 +41,7 @@ ex.
 ###### Linux:
 You need to set wp-cli.phar to be an executable file:
 ```chmod +x wp-cli.phar
-   sudo mv wp-cli.phar /usr/local/bin/wp```
+sudo mv wp-cli.phar /usr/local/bin/wp```
 
 ###### Windows 10:
 You need to set wp-cli.phar to be an executable file in two files:
