@@ -1,3 +1,5 @@
+# The Network Exam
+
 ### Please make sure you already have your Git or Git Bash already setup/configured on your machine.
 ### Please make sure you are connected on the internet while doing this.
 
@@ -174,10 +176,12 @@ Locate windows hosts file on notepad by `ctrl + o`, and navigating to `C:\Window
 ex.
 notepad-dropdown.png
 
-** Open hosts file and change the ip. **
-`127.0.1.1 	thenetwork.localdev`
+Open hosts file and change the ip.
+```
+127.0.1.1 	thenetwork.localdev
+```
 
-** Restart your wampserver to take effect. **
+Restart your wampserver to take effect.
 
 
 #### Install your wordpress via browser and follow instructions :
@@ -190,14 +194,14 @@ clone-thenetworkexam.png
 cd into folder.
 
 
-Resources:
+## Resources :
 
-Linux:
+#### Linux:
 https://www.hostinger.ph/tutorials/wp-cli
-Windows:
+#### Windows:
 https://wensolutions.com/installing-wp-cli-in-windows/
 
-More Examples:
+## More Examples :
 https://deluxeblogtips.com/install-wp-cli-windows/
 https://maheshwaghmare.com/setup-wp-cli-wordpress-command-line-interface-on-windows-operating-system/
 
