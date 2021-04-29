@@ -9,10 +9,11 @@ xampp mamp wamp lamp
 #### Open your git bash or terminal or iterm depending on your machine :
 cd into your mamp or wamp or xampp or lamp htdocs or www or your vhost root directory or folder.
 
-I am using wamp and is slightly configured differently so mine is located at 
-C:\wamp64\www\vhosts\ and yours will most like be in /www or /htdocs
+I am using wamp and is slightly configured differently so `mine is located at C:\wamp64\www\vhosts\` and yours will most like be in `/www`or `/htdocs`
 
-```cd C:/wamp64/www/vhosts``` ( please mind the slashes if your having trouble with it )
+```
+cd C:/wamp64/www/vhosts
+``` ( please mind the slashes if your having trouble with it )
 
 
 #### Install wp-cli :
