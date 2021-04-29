@@ -40,8 +40,8 @@ Make the file executable globally.
 ex.
 ###### Linux:
 You need to set wp-cli.phar to be an executable file:
-```chmod +x wp-cli.phar```
-```sudo mv wp-cli.phar /usr/local/bin/wp```
+`chmod +x wp-cli.phar`
+`sudo mv wp-cli.phar /usr/local/bin/wp`
 
 ###### Windows 10:
 You need to set wp-cli.phar to be an executable file in two files:
@@ -52,8 +52,8 @@ wp-cli-for-cmd.png
 
 
 edit the file, add the following code, save and run the .bat file by double clicking:
-@ECHO OFF
-php %~dp0wp-cli.phar %*
+```@ECHO OFF
+php %~dp0wp-cli.phar %*```
 ex.
 edit-wp-cli-bat.png
 
