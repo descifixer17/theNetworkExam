@@ -7,7 +7,7 @@ mamp
 wamp
 lamp
 
-#### Open your git bash or terminal or iterm depending on your machine.
+#### Open your git bash or terminal or iterm depending on your machine :
 cd into your mamp or wamp or xampp or lamp htdocs or www or your vhost root directory or folder.
 
 I am using wamp and is slightly configured differently so mine is located at 
@@ -30,39 +30,42 @@ wp-cli-folder.png
 #### Download WP-CLI tool
 
 ###### At these point you should already be running your xampp or wamp or mamp already
-```curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar```
+```
+curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+```
 ###### Confirm that it has been downloaded successfully
-```php wp-cli.phar --info```
+```
+php wp-cli.phar --info
+```
 
-
-Make the file executable globally.
+###### Make the file executable globally.
 
 ex.
-###### Linux:
-You need to set wp-cli.phar to be an executable file:
+#### Linux:
+##### You need to set wp-cli.phar to be an executable file:
 ```chmod +x wp-cli.phar```
-
 ```sudo mv wp-cli.phar /usr/local/bin/wp```
 
-###### Windows 10:
-You need to set wp-cli.phar to be an executable file in two files:
-create a small batch file next to your *.phar to activate wp-cli in cmd:
+#### Windows 10:
+##### You need to set wp-cli.phar to be an executable file in two files:
+###### Create a small batch file next to your *.phar to activate wp-cli in cmd:
 `touch wp.bat` (take note of the name as this is the command you use in cmd)
 ex.
 wp-cli-for-cmd.png
 
 
-edit the file, add the following code, save and run the .bat file by double clicking:
+##### Edit the file, add the following code, save and run the .bat file by double clicking:
 ```@ECHO OFF
 php %~dp0wp-cli.phar %*```
 ex.
 edit-wp-cli-bat.png
 
-so to use "wp" as the command, follow the instruction from the touch command above.
+so to use `"wp"` as the command, follow the instruction from the touch command above.
 
-To use wp-cli in git bash create another file with the same name as the .bat file but no any extension.
+To use wp-cli in `"git bash"` create another file with the same name as the `.bat` file but no any extension.
 and add this set of code and save.
 
+```
 #!/usr/bin/env sh
 
 dir=$(d=${0%[/\\]*}; cd "$d"; pwd)
@@ -80,6 +83,7 @@ fi
 
 dir=$(echo $dir | sed 's/ /\ /g')
 "${dir}/wp-cli.phar" "$@"
+```
 
 ex.
 wp-cli-for-git-bash.png
