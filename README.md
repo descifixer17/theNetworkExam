@@ -120,7 +120,7 @@ curl -O https://wordpress.org/latest.tar.gz
 tar -xvzf latest.tar.gz
 ```
 
-Rename your extracted folder and `take note of its name as` this will be your url access to your local
+Rename your extracted folder and `take note of its name` as this will be your url access to your local
 development website.
 
 ```
@@ -149,37 +149,38 @@ thenetwork-folder.png
 wp core download
 ```
 
-Create your database. Its up to you how you would do it either via browser phpmyadmin or via CLI.
-##### I will use the browser:
+##### Create your database. Its up to you how you would do it either via browser phpmyadmin or via CLI.
+I will use the browser:
 wampserver.png
 
-Go to `Databases` tab then enter your desired database name on the provided input box.
+##### Go to `Databases` tab then enter your desired database name on the provided input box.
 Please make sure you are using the `utf8_general_ci` for less issues in the future.
 phpmyadmin-databases-tab.png
 
-After creating your database, you should add a `virtual host` when using wamp.
+##### After creating your database, you should add a `virtual host` when using wamp.
 wampserver-add-virtualhost.png
 wampserver-add-virtualhost-2.png
 
-Restart your wampserver to take effect.
+##### Restart your wampserver to take effect.
 
-visit http://thenetwork.localdev to start installing wordpress.
+Visit http://thenetwork.localdev to start installing wordpress.
 
 #### Troubleshooting:
 If visiting the said url does not work.
 
-run notepad as administrator by right clicking the app and choosing run as administrator.
-locate windows hosts file on notepad by ctrl + o, and navigating to C:\Windows\System32\drivers\etc and displaying
-all files by clicking the dropdown below.
+** Run notepad as administrator by right clicking the app and choosing run as administrator. **
+Locate windows hosts file on notepad by `ctrl + o`, and navigating to `C:\Windows\System32\drivers\etc` and displaying all files by clicking the dropdown below.
+
+ex.
 notepad-dropdown.png
 
-open hosts file and change the ip.
+** Open hosts file and change the ip. **
 `127.0.1.1 	thenetwork.localdev`
 
-restart your wampserver to take effect.
+** Restart your wampserver to take effect. **
 
 
-Install your wordpress via browser and follow instructions:
+#### Install your wordpress via browser and follow instructions :
 
 Copy the repo url or ssh url from mygithub repo and clone it using your command line interface (CLI) 
 and dont forget the dot at the very end.
