@@ -1,51 +1,52 @@
-Please make sure you already have your Git or Git Bash already setup/configured on your machine.
-Please make sure you are connected on the internet while doing this.
+### Please make sure you already have your Git or Git Bash already setup/configured on your machine.
+### Please make sure you are connected on the internet while doing this.
 
-Download, install, configure and run one of this :
-xampp
-mamp
-wamp
-lamp
+#### Download, install, configure and run one of this :
+###### xampp
+###### mamp
+###### wamp
+###### lamp
 
-Open your git bash or terminal or iterm depending on your machine.
+#### Open your git bash or terminal or iterm depending on your machine.
 cd into your mamp or wamp or xampp or lamp htdocs or www or your vhost root directory or folder.
 
 I am using wamp and is slightly configured differently so mine is located at 
-C:\wamp64\www\vhosts\ and yours will most like be in /www or /htdocs
+###### C:\wamp64\www\vhosts\ and yours will most like be in /www or /htdocs
 
-cd C:/wamp64/www/vhosts ( please mind the slashes if your having trouble with it )
+```cd C:/wamp64/www/vhosts``` ######( please mind the slashes if your having trouble with it )
 
 
-Install wp-cli:
+#### Install wp-cli:
 
 cd to where you want to install wp-cli
-mine is on C:\phpTools for global setup
+mine is on `C:\phpTools` for global setup
 
-cd C:/phpTools
+```cd C:/phpTools```
 
-ex. phpTools
+###### ex. phpTools
 wp-cli-folder.png
 
 
-Download WP-CLI tool
+#### Download WP-CLI tool
 
-At these point you should already be running your xampp or wamp or mamp already
-curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
-Confirm that it has been downloaded successfully
-php wp-cli.phar --info
+###### At these point you should already be running your xampp or wamp or mamp already
+```curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar```
+###### Confirm that it has been downloaded successfully
+```php wp-cli.phar --info```
 
 
 Make the file executable globally.
-ex.
-Linux:
-You need to set wp-cli.phar to be an executable file:
-chmod +x wp-cli.phar
-sudo mv wp-cli.phar /usr/local/bin/wp
 
-Windows 10:
+ex.
+###### Linux:
+You need to set wp-cli.phar to be an executable file:
+```chmod +x wp-cli.phar```
+```sudo mv wp-cli.phar /usr/local/bin/wp```
+
+###### Windows 10:
 You need to set wp-cli.phar to be an executable file in two files:
 create a small batch file next to your *.phar to activate wp-cli in cmd:
-touch wp.bat (take note of the name as this is the command you use in cmd)
+`touch wp.bat` (take note of the name as this is the command you use in cmd)
 ex.
 wp-cli-for-cmd.png
 
