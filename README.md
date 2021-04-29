@@ -93,66 +93,80 @@ dir=$(echo $dir | sed 's/ /\ /g')
 ex.
 wp-cli-for-git-bash.png
 
-Search environment variable in your computer ( make sure you choose to edit system variable not your account only ):
-Go to System’s Properties -> Advanced tab -> Environment Variables... 
-on System variables section locate Path variable, select and press edit.
+#### Search `environment variable` in your computer ( make sure you choose to edit system variable not your account only ):
+`Go to System’s Properties -> Advanced tab -> Environment Variables` ... 
+On System variables section locate Path variable, select and press edit.
+
 ex.
 set-environment-variable.png
 
-Add new variable and press ok 3x.
+#### Add new variable and press ok 3x :
+
 ex.
 add-new-variable.png
 
-Get back to your /www or /htdocs folder on your command line
+#### Get back to your /www or /htdocs folder on your command line :
+```
 cd C:/wamp64/www/vhosts
+```
 
-2 ways to download wordpress:
+### 2 ways to download wordPress :
 
-First way:
-make sure you are on git bash for windows users
+#### First way :
+Make sure you are on git bash for windows users
 
+```
 curl -O https://wordpress.org/latest.tar.gz
 tar -xvzf latest.tar.gz
+```
 
-Rename your extracted folder and take note of its name as this will be your url access to your local
+Rename your extracted folder and `take note of its name as` this will be your url access to your local
 development website.
 
+```
 mv wordpress/ ./thenetworkexam
+```
 
 ex. thenetworkexam
 thenetwork-folder.png
 
-remove tar.gz file:
+##### Remove tar.gz file:
+```
 rm -f latest.tar.gz
+```
 
-Second way: 
-create a name for your folder
+#### Second way: 
+Create a name for your folder
 
+```
 mkdir thenetworkexam
+```
 
 ex. thenetworkexam
 thenetwork-folder.png
 
+```
 wp core download
+```
 
 Create your database. Its up to you how you would do it either via browser phpmyadmin or via CLI.
-I will use the browser:
+##### I will use the browser:
 wampserver.png
 
-Go to Databases tab then enter your desired database name on the provided input box.
-Please make sure you are using the utf8_general_ci for less issues in the future.
+Go to `Databases` tab then enter your desired database name on the provided input box.
+Please make sure you are using the `utf8_general_ci` for less issues in the future.
 phpmyadmin-databases-tab.png
 
-After creating your database, you should add a virtual host when using wamp.
+After creating your database, you should add a `virtual host` when using wamp.
 wampserver-add-virtualhost.png
 wampserver-add-virtualhost-2.png
 
-restart your wampserver to take effect.
+Restart your wampserver to take effect.
 
 visit http://thenetwork.localdev to start installing wordpress.
 
-Troubleshooting:
-if visiting the said url does not work.
+#### Troubleshooting:
+If visiting the said url does not work.
 
 run notepad as administrator by right clicking the app and choosing run as administrator.
 locate windows hosts file on notepad by ctrl + o, and navigating to C:\Windows\System32\drivers\etc and displaying
@@ -160,7 +174,7 @@ all files by clicking the dropdown below.
 notepad-dropdown.png
 
 open hosts file and change the ip.
-127.0.1.1 	thenetwork.localdev
+`127.0.1.1 	thenetwork.localdev`
 
 restart your wampserver to take effect.
 
