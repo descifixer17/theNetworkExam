@@ -21,8 +21,8 @@ mine is on `C:\phpTools` for global setup
 
 ```cd C:/phpTools```
 
-ex. phpTools
-![alt text](https://github.com/descifixer17/theNetworkExam/tree/main/readme-images/wp-cli-folder.png)
+##### ex. phpTools
+![alt text](./readme-images/wp-cli-folder.png)
 
 
 #### Download WP-CLI tool :
