@@ -37,7 +37,7 @@ php wp-cli.phar --info
 ```
 Make the file executable globally.
 
-ex.
+##### ex.
 #### Linux:
 ##### You need to set wp-cli.phar to be an executable file:
 ```
@@ -53,7 +53,8 @@ You need to set wp-cli.phar to be an executable file in two files.
 
 ##### Create a small batch file next to your *.phar to activate wp-cli in cmd:
 `touch wp.bat` (take note of the name as this is the command you use in cmd)
-ex.
+
+##### ex.
 
 ![alt text](./readme-images/wp-cli-for-cmd.png)
 
@@ -64,7 +65,7 @@ ex.
 php %~dp0wp-cli.phar %*
 ```
 
-ex.
+##### ex.
 
 ![alt text](./readme-images/edit-wp-cli-bat.png)
 
@@ -93,7 +94,7 @@ dir=$(echo $dir | sed 's/ /\ /g')
 "${dir}/wp-cli.phar" "$@"
 ```
 
-ex.
+##### ex.
 
 ![alt text](./readme-images/wp-cli-for-git-bash.png)
 
@@ -101,13 +102,13 @@ ex.
 `Go to System’s Properties -> Advanced tab -> Environment Variables` ... 
 On System variables section locate Path variable, select and press edit.
 
-ex.
+##### ex.
 
 ![alt text](./readme-images/set-environment-variable.png)
 
 #### Add new variable and press ok 3x :
 
-ex.
+##### ex.
 
 ![alt text](./readme-images/add-new-variable.png)
 
@@ -132,7 +133,7 @@ Rename your extracted folder and `take note of its name` as this will be your ur
 mv wordpress/ ./thenetworkexam
 ```
 
-ex. thenetworkexam
+##### ex. thenetworkexam
 
 ![alt text](./readme-images/thenetwork-folder.png)
 
@@ -148,7 +149,7 @@ Create a name for your folder
 mkdir thenetworkexam
 ```
 
-ex. thenetworkexam
+##### ex. thenetworkexam
 
 ![alt text](./readme-images/thenetwork-folder.png)
 
@@ -178,7 +179,7 @@ If visiting the said url does not work.
 ##### Run notepad as administrator by right clicking the app and choosing run as administrator. #####
 Locate windows hosts file on notepad by `ctrl + o`, and navigating to `C:\Windows\System32\drivers\etc` and displaying all files by clicking the dropdown below.
 
-ex.
+##### ex.
 
 ![alt text](./readme-images/notepad-dropdown.png)
 
