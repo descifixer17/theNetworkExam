@@ -54,7 +54,8 @@ You need to set wp-cli.phar to be an executable file in two files.
 ##### Create a small batch file next to your *.phar to activate wp-cli in cmd:
 `touch wp.bat` (take note of the name as this is the command you use in cmd)
 ex.
-wp-cli-for-cmd.png
+
+![alt text](./readme-images/wp-cli-for-cmd.png)
 
 
 ##### Edit the file, add the following code, save and run the .bat file by double clicking:
@@ -64,7 +65,8 @@ php %~dp0wp-cli.phar %*
 ```
 
 ex.
-edit-wp-cli-bat.png
+
+![alt text](./readme-images/edit-wp-cli-bat.png)
 
 so to use `"wp"` as the command, follow the instruction from the touch command above.
 
@@ -92,19 +94,22 @@ dir=$(echo $dir | sed 's/ /\ /g')
 ```
 
 ex.
-wp-cli-for-git-bash.png
+
+![alt text](./readme-images/wp-cli-for-git-bash.png)
 
 #### Search `environment variable` in your computer ( make sure you choose to edit system variable not your account only ) :
 `Go to System’s Properties -> Advanced tab -> Environment Variables` ... 
 On System variables section locate Path variable, select and press edit.
 
 ex.
-set-environment-variable.png
+
+![alt text](./readme-images/set-environment-variable.png)
 
 #### Add new variable and press ok 3x :
 
 ex.
-add-new-variable.png
+
+![alt text](./readme-images/add-new-variable.png)
 
 #### Get back to your /www or /htdocs folder on your command line :
 ```
@@ -128,7 +133,8 @@ mv wordpress/ ./thenetworkexam
 ```
 
 ex. thenetworkexam
-thenetwork-folder.png
+
+![alt text](./readme-images/thenetwork-folder.png)
 
 ##### Remove tar.gz file:
 ```
@@ -143,7 +149,8 @@ mkdir thenetworkexam
 ```
 
 ex. thenetworkexam
-thenetwork-folder.png
+
+![alt text](./readme-images/thenetwork-folder.png)
 
 ```
 wp core download
@@ -151,15 +158,15 @@ wp core download
 
 ##### Create your database. Its up to you how you would do it either via browser phpmyadmin or via CLI.
 ###### I will use the browser :
-wampserver.png
+![alt text](./readme-images/wampserver.png)
 
 ##### Go to `Databases` tab then enter your desired database name on the provided input box.
 Please make sure you are using the `utf8_general_ci` for less issues in the future.
-phpmyadmin-databases-tab.png
+![alt text](./readme-images/phpmyadmin-databases-tab.png)
 
 ##### After creating your database, you should add a `virtual host` when using wamp.
-wampserver-add-virtualhost.png
-wampserver-add-virtualhost-2.png
+![alt text](./readme-images/wampserver-add-virtualhost.png)
+![alt text](./readme-images/wampserver-add-virtualhost-2.png)
 
 ##### Restart your wampserver to take effect.
 
@@ -172,7 +179,8 @@ If visiting the said url does not work.
 Locate windows hosts file on notepad by `ctrl + o`, and navigating to `C:\Windows\System32\drivers\etc` and displaying all files by clicking the dropdown below.
 
 ex.
-notepad-dropdown.png
+
+![alt text](./readme-images/notepad-dropdown.png)
 
 ##### Open hosts file and change the ip. #####
 ```
@@ -187,7 +195,8 @@ notepad-dropdown.png
 Copy the repo url or ssh url from mygithub repo and clone it using your command line interface (CLI) 
 and dont forget the dot at the very end.
 git clone https://github.com/descifixer17/theNetworkExam.git .
-clone-thenetworkexam.png
+
+![alt text](./readme-images/clone-thenetworkexam.png)
 
 cd into folder.
 
